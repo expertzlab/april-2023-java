@@ -5,10 +5,17 @@ import org.joda.time.DateTime;
 public class DateDemo {
     
     public static void main(String[] args) {
-       DateTime dt = new DateTime();
-       System.out.println("Current dt:"+ dt);
-       DateTime dtA20Days = dt.plusDays(20);
-       System.out.println("Date after 20 days:"+ dtA20Days);
+        
+       DateTime today = new DateTime();
+       DateTime yesterday = new DateTime().minusDays(1);
+       System.out.println("today:" + today);
+       System.out.println("yesterday:" + yesterday);
+
+       if(yesterday.isAfter(today)){
+         System.out.println("YES");
+       } else{
+        System.out.println("NO");
+       }
 
     }
 }
