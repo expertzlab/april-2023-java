@@ -33,7 +33,7 @@ class One{
            y = ((Two)x).getValue();
         }
         
-       if(this.getValue() == y ){
+       if(this.getAge() == x.getAge() && this.getName().equals(x.getName())  ){
         return true;
        } else {
         return false;
