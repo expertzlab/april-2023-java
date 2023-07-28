@@ -24,4 +24,8 @@ public class Person {
         return addr;
     }
 
+    public String toString(){
+        return ""+age+", "+name+", "+ addr[0]+", "+ addr[1];
+    }
+
 }
