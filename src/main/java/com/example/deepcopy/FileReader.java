@@ -15,11 +15,11 @@ public class FileReader {
         java.io.FileReader reader = new java.io.FileReader(file);
         BufferedReader bfReader = new BufferedReader(reader);
         String str = bfReader.readLine();
-        StringToPersonCoverter stpc = new StringToPersonCoverter();
-        pl.add( stpc.convert(str) );
+        
         while(str != null && str.length()> 0){
-            str = bfReader.readLine();
+            StringToPersonCoverter stpc = new StringToPersonCoverter();
             pl.add( stpc.convert(str) );
+            str = bfReader.readLine();
         }
         return pl;
     }

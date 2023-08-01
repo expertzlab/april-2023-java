@@ -10,7 +10,7 @@ public class IntCalculator implements BaseCalculator {
     }
 
     public Object sum(){
-        return Integer.valueOf( a+b);
+        return  Integer.valueOf(a+b);
     }
 
     public Object difference(){

@@ -1,8 +1,9 @@
 package com.example.abs;
 
-public interface BaseCalculator {
+ public interface BaseCalculator {
 
-     public Object sum();
-     public Object difference();
+     public abstract  Object sum();
+
+     public abstract Object difference();
 
 }

@@ -1,6 +1,7 @@
 package com.example.abs;
 
 public class FloatCalculator implements BaseCalculator {
+    
     float a;
     float b;
 
