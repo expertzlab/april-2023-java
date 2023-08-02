@@ -1,24 +1,26 @@
 package com.example.calendar;
 
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
 public class CalendarSamples {
-    public static void main(String[] args) {
-        GregorianCalendar cal = new GregorianCalendar(2020,8-1 ,2);
-        //System.out.println(cal);
-        System.out.println("epoch:" +cal.getTime());
-        System.out.println("Year:"+ cal.get(Calendar.YEAR));
     
-        int i = 10;
-        while(i< 100){
-            if( i< 20){
-                System.out.println("hello");
-                
-            }
-            i = i + 10;
+    public static String decideivalue(int i) {
+   
+        String result = null;
+        switch(i){
+            case 1:
+                result = "values is 1";
+                break;
+            case 2:
+            case 3:
+            case 4:
+                result = "less than 5";
+                break;
+            
+            case 5:
+            case 6:
+            case 7:
+                result = "less than 8";
         }
-        
+       return result;
 
     }
 }
