@@ -19,6 +19,7 @@ public class CalendarSamples {
             case 6:
             case 7:
                 result = "less than 8";
+            case 8:
         }
        return result;
 
