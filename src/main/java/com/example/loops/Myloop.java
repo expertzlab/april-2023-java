@@ -2,14 +2,19 @@ package com.example.loops;
 
 public class Myloop {
     public static void main(String[] args) {
-        //1, 1, 2, 3, 5, 8, 13
         int i = 0;
         int j = 1;
-        while(j<13){
-            int n = i+j;
-            System.out.println(n);
-            i = j;
-            j = n;
-        }
+         fib(i, j);
+
+    }
+
+    public static int fib(int i, int j){
+            int n = 0;
+            System.out.println("j:"+j);
+            if(j < 13){
+                n = fib(j, i+j);
+            }
+            System.out.println("n:"+n);
+            return j + n;
     }
 }
