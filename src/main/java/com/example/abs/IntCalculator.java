@@ -9,8 +9,8 @@ public class IntCalculator implements BaseCalculator {
         b = y;
     }
 
-    public Object sum(){
-        return  Integer.valueOf(a+b);
+    public B sum(){
+        return  new B();
     }
 
     public Object difference(){

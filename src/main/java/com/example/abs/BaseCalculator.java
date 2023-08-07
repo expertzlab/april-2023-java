@@ -1,8 +1,11 @@
 package com.example.abs;
 
- public interface BaseCalculator {
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
-     public abstract  Object sum();
+public interface BaseCalculator {
+
+     public abstract  A sum() throws IOException;
 
      public abstract Object difference();
 

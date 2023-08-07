@@ -1,5 +1,8 @@
 package com.example.abs;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class FloatCalculator implements BaseCalculator {
     
     float a;
@@ -10,9 +13,10 @@ public class FloatCalculator implements BaseCalculator {
         b = y;
     }
 
-    public Object sum(){
-        return Float.valueOf(a+b);
+    public B sum() throws FileNotFoundException {
+        return new B();
     }
+
 
     public Object difference(){
         return a - b;
