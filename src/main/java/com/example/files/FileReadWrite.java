@@ -18,9 +18,10 @@ public class FileReadWrite {
         BufferedReader bfReader = new BufferedReader(fread);
 
         FileWriter fWriter = new FileWriter(fout);
-        String line = null;
-        while( (line = bfReader.readLine()) != null){
+        String line = bfReader.readLine();
+        while( line != null){
             fWriter.write(line+"\n");
+            line = bfReader.readLine();
             //fWriter.flush();
         }
         fWriter.close();
