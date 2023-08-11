@@ -2,29 +2,27 @@ package com.example.map;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
+import java.util.Set;
+import java.util.Map.Entry;
 
 import com.example.deepcopy.Person;
 
 public class Hashm {
 
     public static void main(String[] args) {
+        Map m = new Hashtable<>();
+        m.put("n1", new Person("n1", 20, null));
+        m.put("n8", new Person("n8", 20, null));
+        m.put("n5", new Person("n5", 20, null));
+        m.put("n3", new Person("n3", 20, null));
 
-     long t1 = System.currentTimeMillis();
-
-     Person[] pa = new Person[5];
-     pa[0] = new Person("n1",20, null);
-     pa[1] = new Person("n5", 22, null);
-     pa[2] = new Person("n2", 22, null);
-     pa[3] = new Person("n8", 22, null);
-     pa[4] = new Person("n4", 22, null);
-
-     Arrays.sort(pa, new PersonComparator() );
-
-     for(Person p : pa){
-        System.out.println(p);
-     }
-     long t2 = System.currentTimeMillis();
-     System.out.println("time:"+ (t2-t1));
+        Set eset = m.entrySet();
+        for(Object e: eset){
+            System.out.println(((Entry)e).getKey()+ " " + ((Entry)e).getValue());
+        }
     }
     
 }
