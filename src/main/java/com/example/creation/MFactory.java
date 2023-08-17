@@ -1,8 +1,9 @@
 package com.example.creation;
 
-public class MFactory {
+public interface MFactory {
 
-    public M getInstance(){
-       return new M1();
-    }
+    final String M1_TYPE = "M1";
+    final String M2_Type = "M2";
+
+    public M getInstance(String type);
 }

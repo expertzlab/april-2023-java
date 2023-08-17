@@ -1,8 +1,8 @@
 package com.example.creation;
 
-public class M2Factory extends MFactory {
+public class M2Factory implements MFactory {
 
-    public M getInstance(){
+    public M getInstance(String type){
         return new M2();
     }
     
